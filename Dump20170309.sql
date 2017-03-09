@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `shoestore` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `shoestore`;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
 -- Host: localhost    Database: shoestore
@@ -30,7 +32,7 @@ CREATE TABLE `shoes` (
   `color` varchar(45) DEFAULT NULL,
   `discount` varchar(45) DEFAULT NULL,
   `categories` varchar(45) DEFAULT NULL,
-  `piclink` varchar(45) DEFAULT NULL,
+  `piclink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`shoeid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,7 +43,7 @@ CREATE TABLE `shoes` (
 
 LOCK TABLES `shoes` WRITE;
 /*!40000 ALTER TABLE `shoes` DISABLE KEYS */;
-INSERT INTO `shoes` VALUES ('SKU# 00001','Nike','$99.00','12','White','10%',NULL,NULL);
+INSERT INTO `shoes` VALUES ('SKU# 00001','Nike','$99.00','12','red','10%','ladies','https://www.flightclub.com/media/catalog/product/cache/1/image/800x570/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-air-huarache-triple-red-varsity-red-vrsty-red-vrsty-rd-052769_1.jpg'),('SKU# 00002','Jordan','$169.00','9','Black','10%','men','https://www.flightclub.com/media/catalog/product/cache/1/image/800x570/9df78eab33525d08d6e5fb8d27136e95/0/1/012597_1.jpg');
 /*!40000 ALTER TABLE `shoes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-08 15:22:56
+-- Dump completed on 2017-03-09 15:51:47
