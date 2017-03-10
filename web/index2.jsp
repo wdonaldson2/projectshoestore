@@ -41,7 +41,7 @@
       <p style="font-family:'Comic Sans MS';">
   <a href="" class="button" style="font-size:180%">Home</a>
   <a href="" class="button" style="font-size:180%">Shop</a>
-  <a href="" class="button" style="font-size:180%">Contact</a>
+  <a href="ContactUs.html" class="button" style="font-size:180%">Contact</a>
       </p>
       <br>
     <br>
@@ -66,7 +66,7 @@
       </style>
       <p style="font-family:'Comic Sans MS';">
           <a href="" class="button" style="font-size:180%">Gallery</a>
-          <a href="" class="button" style="font-size:180%">About_Us</a>
+          <a href="listAll.jsp" class="button" style="font-size:180%">Admin</a>
       </p>
   </div>
   <br>

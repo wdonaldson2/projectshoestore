@@ -27,7 +27,7 @@
                     " from shoes ORDER BY shoeid");
 %>
 <h1>Shoe List</h1>
-<a href="form.html">Add New Customer</a>
+<a href="listAll.html">Add New Customer</a>
 <table BORDER="1">
     <tr>
         <th colspan="5">Shoe Info</th>
@@ -54,7 +54,7 @@
         <td> <%= resultset.getString("categories") %></td>
         <td> <%= resultset.getString("piclink") %></td>
         <td class="button">
-            <form method="post" action="updateCustomerForm.jsp">
+            <form method="post" action="listAll.html">
                 <input type="hidden" name="shoeid" value="<%= resultset.getString("shoeid") %>">
                 <input type="hidden" name="brand" value="<%= resultset.getString("brand") %>">
                 <input type="hidden" name="price" value="<%= resultset.getString("price") %>">
