@@ -8,6 +8,9 @@
 
 </head>
 <body>
+
+
+
 <h1>Show Details</h1>
 <%
     //you need this for JDBC with MySQL in version 5
